@@ -1,3 +1,8 @@
+import os
+
+filepath = r"d:\Project\FreeLab\.github\workflows\build-android.yml"
+
+workflow_yaml = """
 name: Build Android APK
 
 on:
@@ -31,3 +36,9 @@ jobs:
       with:
         name: app-debug
         path: ScreenTime/AndroidApp/app/build/outputs/apk/debug/app-debug.apk
+"""
+
+with open(filepath, 'w', encoding='utf-8') as f:
+    f.write(workflow_yaml.strip())
+
+print("Workflow updated for Gradle 8.4.")
