@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wellbeing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to separated styles -->
+    <!-- Link to separated styles -->
+    <link rel="stylesheet" href="/static/css/popup.css?v=5">
+</head>
+
+<body>
+
+    <div class="header">
+        <button class="nav-btn" id="prevWeekBtn" title="Previous Week">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6" />
+            </svg>
+        </button>
+        <div class="header-title" style="flex: 1; text-align: center;">Dashboard</div>
+        <button class="nav-btn" id="nextWeekBtn" title="Next Week">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="transform: rotate(180deg)">
+                <path d="M15 18l-6-6 6-6" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Date Row (Strictly Aligned) -->
+    <div class="grid-7-col" id="dateRow" style="padding-left: 30px; margin-bottom: 5px;">
+        <!-- JS injected -->
+    </div>
+
+    <div class="chart-section" id="chartSection">
+        <div class="grid-lines" id="gridLines">
+            <!-- JS injected -->
+        </div>
+
+        <div class="bars-grid grid-7-col" id="barsContainer">
+            <!-- JS injected -->
+        </div>
+    </div>
+
+    <div class="app-list-container">
+        <div class="list-header">
+            <span id="listTitleName">Name (Daily)</span>
+            <span>Time</span>
+        </div>
+        <div class="list-items" id="appList"></div>
+    </div>
+
+    <!-- Link to separated script -->
+    <script src="/static/js/popup.js?v=5"></script>
+</body>
+
+</html>
