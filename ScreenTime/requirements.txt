@@ -1,8 +1,0 @@
-pywin32
-psutil
-pystray
-pillow
-nicegui
-pandas
-plotly
-requests

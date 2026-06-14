@@ -1,0 +1,8 @@
+Drop_*
+
+node_modules/
+__pycache__/
+
+.env
+.env.local
+.env.production
